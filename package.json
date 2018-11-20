@@ -5,11 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "nodemod dist/index.js",
-    "build": "tsc",
-    "dev": "tsc --watch & nodemon dist",
-    "test": "tsc && mocha dist/**/*.spec.js",
+    "build": "./node_modules/typescript/bin/tsc",
+    "dev": "./node_modules/typescript/bin/tsctsc --watch & nodemon dist",
+    "test": "./node_modules/typescript/bin/tsctsc && mocha dist/**/*.spec.js",
     "lint": "eslint src --ext ts",
-    "tsc": "tsc"
+    "tsc": "./node_modules/typescript/bin/tsc"
   },
   "keywords": [],
   "author": "",
