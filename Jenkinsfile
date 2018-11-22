@@ -1,11 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage ('Git checkout') {
+    stage('Git checkout') {
       steps {
         git 'https://github.com/thekrafft/expresshw.git'
-          }
       }
+    }
     stage('Npm install') {
       steps {
         sh '/opt/rh/rh-nodejs4/root/usr/bin/npm install'
