@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Git checkout') {
       steps {
-        git https://github.com/thekrafft/expresshw.git
+        git 'https://github.com/thekrafft/expresshw.git'
           }
     stage('Npm install') {
       steps {
