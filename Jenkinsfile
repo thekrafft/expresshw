@@ -1,24 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('Npm build') {
+    stage('Npm install') {
       steps {
-        sh 'npm run dev'
+        sh 'npm install'
       }
     }
-    stage('Development') {
+    stage('Run build') {
       steps {
-        sh 'npm run dev'
+        sh 'npm run build'
       }
     }
     stage('Running tests') {
       steps {
         sh 'npm test'
-      }
-    }
-    stage('Linting') {
-      steps {
-        sh 'npm run lint'
       }
     }
     stage('Buildning container') {
