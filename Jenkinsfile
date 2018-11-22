@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Npm build') {
       steps {
-        echo 'BUILD SUCCESS'
+        echo 'test'
         sh 'npm run build'
       }
     }
